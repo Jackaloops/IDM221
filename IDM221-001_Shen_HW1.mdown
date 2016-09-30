@@ -1,0 +1,19 @@
+#Homework 1
+
+* [Github Profile](https://github.com/Jackaloops)
+* [Website URL](https://www.fullmoongamestudios.com)
+
+##Inspiration
+
+###[Supergiant Games](https://www.supergiantgames.com/)
+
+The design of the website is well made and attractive. I especially like the animations included in the individual game pages. Everything is laid out in an easy to comprehend manner and navigation is intuitive. One thing I don't like is that the overall layout is a little bit bland and it can  use a color other than white as its background to make its content "pop" more.
+
+###[Dragon Age Keep](https://dragonagekeep.com/)
+
+Since the website requires a log in to view, here are some [screenshots](http://imgur.com/a/eiRoh) of what it looks like. As a website designed to record player choices in an RPG and create save states accordingly, it makes what would have been a boring technical task into something fun and enjoyable for the user. The art is beautiful and the layout makes it really feel like a tapestry of the user's adventure within the game. Navigation, however, is a little clunky as the only way to go back from a tile is through the navbar on top.
+
+###[League of Legends: Champion Reveal](http://na.leagueoflegends.com/en/featured/champion-reveal-ivern-green-father)
+
+Though the rest of the website is average at best, League of Legednd's champion reveals are always breathtakingly designed. The animations and design effectively makes the webpage into an experience as you scroll down the jungle canopies. The page manages to relay useful information while at the same time creating a literal work of art.
+

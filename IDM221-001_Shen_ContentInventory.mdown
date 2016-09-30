@@ -1,0 +1,42 @@
+# Content Inventory #
+
+## Logo ##
+(WIP)
+
+## About Us ##
+
+Full Moon Studios is an indie developer with big dreams. We aim to create beautifully crafted games that stay with their players.
+
+
+## Games ##
+
+To Be Announced!
+
+
+## Our Team ##
+
+### Jack Shen ###
+
+> **UI Design, Programming, Art**  
+> *[Website](http://artnoises.daportfolio.com/)*
+
+> Jack is a nocturnal Interactive Digital Media student at Drexel University. He is a designer, developer, and artist for Full Moon Studios, and can be described as something of a *jack* of all trades. He enjoyed learning programming as a child because it made him feel smarter than everyone else, and he wanted to become a game developer/artist/designer ever since he got hooked on the Dragon Age series. When he isn't busying away, Jack enjoys tea, baking, and taking naps with his cat, Lucian.
+
+### Wills Martin ###
+
+> **Programming**  
+> *[Website](about:blank)*
+
+> Wills is a man-sized puppy who also happens to be a Computer Science student at Drexel. He has been playing video games for as long as he could remember and wanted to be a programmer since he was a kid. When in  his natural habitat, Wills can be observed casually beating the rest of his team in every video game imaginable. Wills has a profound appreciation for Harry Potter, dancing, and bears.
+
+### Chris Lucas ###
+
+> **Art, Game Design, Animations, Modeling**  
+> *[Website](about:blank)*
+
+> Chris is a Game Arts and Design student and Full Moon Studios' resident insomniac. Chris loves games with a good artist direction and quality storytelling, and is known to flip her popsicles over games with poor design and/or plotlines. Chris also enjoys making mocktails, hibernating, and any furry animal that isn't a panda.
+
+
+## Contact ##
+
+[Email](mailto:contact@fullmoongamestudios.com)
