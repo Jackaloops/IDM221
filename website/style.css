@@ -1,0 +1,31 @@
+html {
+	background-color: #031926;
+}
+
+nav ul li a {
+	color: #9DBEBB;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: #F4E9CD;
+}
+
+nav ul li a:active {
+	color: #77ACA2;
+}
+
+main {
+	background-color: #468189;
+	color: #F4E9CD;
+}
+
+article {
+	background-color: #F4E9CD;
+	color: #595959;
+}
+
+.game {
+	background: #77ACA2;
+	color: #595959;
+}
