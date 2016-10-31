@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Amatica+SC|Josefin+Sans');
+
 html {
 	background-color: #031926;
+	font-size: 16px;
 }
 
 nav ul li a {
 	color: #9DBEBB;
 	text-decoration: none;
+	font-size: 2rem;
 }
 
 nav ul li a:hover {
@@ -25,7 +29,20 @@ article {
 	color: #595959;
 }
 
+h1 {
+	font-size: 3rem;
+}
+
 .game {
 	background: #77ACA2;
 	color: #595959;
+}
+
+.htext {
+	font-family: 'Amatica SC', cursive;
+}
+
+.btext {
+	font-family: 'Josefin Sans', cursive;
+	font-size: 1.25rem;
 }
