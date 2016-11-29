@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Amatica+SC|Josefin+Sans|Fredericka+the+Great|Josefin+Slab');
 
 html {
-	background-image: url("swirl_pattern.png");
 	font-size: 16px;
-	height: 100vh;
+	background-image: url("swirl_pattern.png"); /* background picture obtained through subtlepatterns.com */
 }
 
 body {
@@ -12,63 +11,67 @@ body {
 	font-size: 16px;
 }
 
- /* 
- _   _    ___     ______    _    ____  
-| \ | |  / \ \   / / __ )  / \  |  _ \ 
-|  \| | / _ \ \ / /|  _ \ / _ \ | |_) |
-| |\  |/ ___ \ V / | |_) / ___ \|  _ < 
-|_| \_/_/   \_\_/  |____/_/   \_\_| \_\ 
+/*
+ /$$   /$$  /$$$$$$  /$$      /$$ /$$$$$$$$       /$$$$$$$   /$$$$$$   /$$$$$$  /$$$$$$$$
+| $$  | $$ /$$__  $$| $$$    /$$$| $$_____/      | $$__  $$ /$$__  $$ /$$__  $$| $$_____/
+| $$  | $$| $$  \ $$| $$$$  /$$$$| $$            | $$  \ $$| $$  \ $$| $$  \__/| $$      
+| $$$$$$$$| $$  | $$| $$ $$/$$ $$| $$$$$         | $$$$$$$/| $$$$$$$$| $$ /$$$$| $$$$$   
+| $$__  $$| $$  | $$| $$  $$$| $$| $$__/         | $$____/ | $$__  $$| $$|_  $$| $$__/   
+| $$  | $$| $$  | $$| $$\  $ | $$| $$            | $$      | $$  | $$| $$  \ $$| $$      
+| $$  | $$|  $$$$$$/| $$ \/  | $$| $$$$$$$$      | $$      | $$  | $$|  $$$$$$/| $$$$$$$$
+|__/  |__/ \______/ |__/     |__/|________/      |__/      |__/  |__/ \______/ |________/
 */
 
-/* ~~~~~~ ONLY APPIES TO HOMEPAGE ~~~~~~*/
-
-.navi.mainOnly {
-	height: 100vh;
-	padding: 0;
-}
-
 #logo {
-	padding: 20vh;
-	padding-bottom: 15vh;
+	padding-top: 20vh;
+	padding-bottom: 10vh;
 }
 
 #logo img {
 	display: block;
 	margin: auto;
-}
 
-.navi.mainOnly .navlinks__container {
-	padding-top: 15vh;
-}
-
-#hr__dummy {
-	position: absolute;
-	top: 50%;
-	transform: translate(0, -50%);
-
-	margin: 0;
-	padding: 0;
-
-	width: 30vw;
-	background-color: #ffffff;
-	opacity: 100%;
-	height: 2px;
+	height: 35vh;
+	width: 35w;
 }
 
 #hr__container {
-	position: fixed;
-
-	width: 100vw;
 	margin: 0 auto;
+	text-align: center;
+}
+
+#hr__dummy {
+	/*position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);*/
+
+	margin: 0 auto;
+	padding: 0;
+	vertical-align: center;
+	width: 30vw;
+	background-color: #ffffff;
+	height: 2px;
+}
+
+#hr__container ul {
+	padding: 0;
+	margin: 0;
+
+	list-style-type: none;
+}
+
+#hr__container ul li {
+	display: inline-block;
+	vertical-align: middle;
 }
 
 #hr__dummy-right {
-	position: absolute;
+	/*position: absolute;
 	top: 50%;
 	left: 50%;
 	float: left;
-	transform: translate(70%, -50%);
-
+	transform: translate(66.5%, -50%);
+*/
 	margin: 0;
 	padding: 0;
 
@@ -78,19 +81,40 @@ body {
 }
 
 #title {
-	position: absolute;
+	/*position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);*/
+	margin-left: .5vw;
+	margin-right: .5vw;
 
 	font-size: 5vw;
 	color: #F4E9CD;
 }
 
+#descript {
+	margin: 0 auto;
+	margin-top: 5vh;
+	width: 45vw;
 
-/* ~~~~~ Applies to all pages ~~~~~~ */
+	text-align: center;
+	color: #9DBEBB;
+}
+
+ /* 
+ /$$   /$$  /$$$$$$  /$$    /$$ /$$$$$$$   /$$$$$$  /$$$$$$$ 
+| $$$ | $$ /$$__  $$| $$   | $$| $$__  $$ /$$__  $$| $$__  $$
+| $$$$| $$| $$  \ $$| $$   | $$| $$  \ $$| $$  \ $$| $$  \ $$
+| $$ $$ $$| $$$$$$$$|  $$ / $$/| $$$$$$$ | $$$$$$$$| $$$$$$$/
+| $$  $$$$| $$__  $$ \  $$ $$/ | $$__  $$| $$__  $$| $$__  $$
+| $$\  $$$| $$  | $$  \  $$$/  | $$  \ $$| $$  | $$| $$  \ $$
+| $$ \  $$| $$  | $$   \  $/   | $$$$$$$/| $$  | $$| $$  | $$
+|__/  \__/|__/  |__/    \_/    |_______/ |__/  |__/|__/  |__/
+*/
 
 .navi {
+	margin-top: 10px;
+	margin-bottom: 10px;
 	padding: 5px;
 	width: 100vw;
 	transition: all 0.5s ease;
@@ -99,7 +123,9 @@ body {
 	top: 0;
 	left: 0;
 
-	background-image: url("swirl_pattern.png"); /* background picture obtained through subtlepatterns.com */
+	background-image: url("broken_noise.png");
+
+	box-shadow: 0px 5px 1px #01070B;
 
 }
 
@@ -141,11 +167,14 @@ body {
 }
 
 /*
- __  __    _    ___ _   _   ____   _    ____ _____ 
-|  \/  |  / \  |_ _| \ | | |  _ \ / \  / ___| ____|
-| |\/| | / _ \  | ||  \| | | |_) / _ \| |  _|  _|  
-| |  | |/ ___ \ | || |\  | |  __/ ___ \ |_| | |___ 
-|_|  |_/_/   \_\___|_| \_| |_| /_/   \_\____|_____|
+  /$$$$$$  /$$$$$$$$ /$$   /$$ /$$$$$$$$ /$$$$$$$  /$$$$$$  /$$$$$$ 
+ /$$__  $$| $$_____/| $$$ | $$| $$_____/| $$__  $$|_  $$_/ /$$__  $$
+| $$  \__/| $$      | $$$$| $$| $$      | $$  \ $$  | $$  | $$  \__/
+| $$ /$$$$| $$$$$   | $$ $$ $$| $$$$$   | $$$$$$$/  | $$  | $$      
+| $$|_  $$| $$__/   | $$  $$$$| $$__/   | $$__  $$  | $$  | $$      
+| $$  \ $$| $$      | $$\  $$$| $$      | $$  \ $$  | $$  | $$    $$
+|  $$$$$$/| $$$$$$$$| $$ \  $$| $$$$$$$$| $$  | $$ /$$$$$$|  $$$$$$/
+ \______/ |________/|__/  \__/|________/|__/  |__/|______/ \______/ 
                                                    */
 
 main {
@@ -183,11 +212,14 @@ h1 {
 
 
 /*
-   ____ ____  ___ ____    ______   ______ _____ _____ __  __ 
-  / ___|  _ \|_ _|  _ \  / ___\ \ / / ___|_   _| ____|  \/  |
- | |  _| |_) || || | | | \___ \\ V /\___ \ | | |  _| | |\/| |
- | |_| |  _ < | || |_| |  ___) || |  ___) || | | |___| |  | |
-  \____|_| \_\___|____/  |____/ |_| |____/ |_| |_____|_|  |_|
+  /$$$$$$  /$$$$$$$  /$$$$$$ /$$$$$$$         /$$$$$$  /$$     /$$ /$$$$$$ 
+ /$$__  $$| $$__  $$|_  $$_/| $$__  $$       /$$__  $$|  $$   /$$//$$__  $$
+| $$  \__/| $$  \ $$  | $$  | $$  \ $$      | $$  \__/ \  $$ /$$/| $$  \__/
+| $$ /$$$$| $$$$$$$/  | $$  | $$  | $$      |  $$$$$$   \  $$$$/ |  $$$$$$ 
+| $$|_  $$| $$__  $$  | $$  | $$  | $$       \____  $$   \  $$/   \____  $$
+| $$  \ $$| $$  \ $$  | $$  | $$  | $$       /$$  \ $$    | $$    /$$  \ $$
+|  $$$$$$/| $$  | $$ /$$$$$$| $$$$$$$/      |  $$$$$$/    | $$   |  $$$$$$/
+ \______/ |__/  |__/|______/|_______/        \______/     |__/    \______/ 
                                                              */
 
 .row {
