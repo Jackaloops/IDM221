@@ -40,19 +40,6 @@ body {
 	text-align: center;
 }
 
-#hr__dummy {
-	/*position: absolute;
-	top: 50%;
-	transform: translate(0, -50%);*/
-
-	margin: 0 auto;
-	padding: 0;
-	vertical-align: center;
-	width: 30vw;
-	background-color: #ffffff;
-	height: 2px;
-}
-
 #hr__container ul {
 	padding: 0;
 	margin: 0;
@@ -65,36 +52,40 @@ body {
 	vertical-align: middle;
 }
 
+#hr__dummy {
+	margin: 0 auto;
+	padding: 0;
+
+	vertical-align: center;
+	width: 28vw;
+
+	background-color: #ffffff;
+	height: 2px;
+}
+
 #hr__dummy-right {
-	/*position: absolute;
-	top: 50%;
-	left: 50%;
-	float: left;
-	transform: translate(66.5%, -50%);
-*/
 	margin: 0;
 	padding: 0;
 
-	width: 30vw;
+	width: 28vw;
 	background-color: #ffffff;
 	height: 2px;
 }
 
 #title {
-	/*position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);*/
-	margin-left: .5vw;
-	margin-right: .5vw;
+	margin-left: 2vw;
+	margin-right: 2vw;
 
 	font-size: 5vw;
 	color: #F4E9CD;
+
+	text-shadow: 0px 7px 2px #01070B;
 }
 
 #descript {
 	margin: 0 auto;
 	margin-top: 5vh;
+
 	width: 45vw;
 
 	text-align: center;
@@ -116,13 +107,13 @@ body {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	padding: 5px;
-	width: 100vw;
-	transition: all 0.5s ease;
-
 	position: fixed;
 	top: 0;
 	left: 0;
 
+	width: 100vw;
+	
+	transition: all 0.5s ease;
 	background-image: url("broken_noise.png");
 
 	box-shadow: 0px 5px 1px #01070B;
@@ -132,8 +123,10 @@ body {
 .navi ul {
 	margin: 0;
 	padding: 0;
-	list-style-type: none;
+
 	align: center;
+
+	list-style-type: none;
 	text-align: center;
 }
 
@@ -142,14 +135,13 @@ body {
 }
 
 .navi ul li a {
-	font-family: 'Fredericka the Great', cursive;
-
 	padding-left: 4vw;
 	padding-right: 4vw;
 
 	color: #9DBEBB;
 	text-decoration: none;
 	font-size: 2rem;
+	font-family: 'Fredericka the Great', cursive;
 
 	opacity: 100%;
 	transition: all 1s;
