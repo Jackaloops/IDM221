@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Amatica+SC|Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Amatica+SC|Josefin+Sans|Fredericka+the+Great|Slabo+27px');
 
 html {
 	background-image: url("swirl_pattern.png");
@@ -8,7 +8,6 @@ html {
 
 body {
 	margin: 0;
-	margin-top: 50.8px;
 	padding: 0;
 }
 
@@ -20,35 +19,16 @@ body {
 |_| \_/_/   \_\_/  |____/_/   \_\_| \_\ 
 */
 
-/* Only applies to homepage*/
+/* ONLY APPIES TO HOMEPAGE*/
+
 .navi.mainOnly {
 	height: 100vh;
-	position: static;
+	padding: 0;
 }
 
 #logo {
 	padding: 30vh;
-	padding-bottom: 0;
-}
-
-.navi.mainOnly .navlinks__container {
-	padding-top: 20vh;
-}
-
-/* Applies to all pages */
-
-.navi {
-	margin: 0;
-	padding: 0;
-	width: 100vw;
-	transition: all 0.5s ease;
-
-	position: fixed;
-	top: 0;
-	left: 0;
-
-	background-image: url("swirl_pattern.png");
-
+	padding-bottom: 5vh;
 }
 
 #logo img {
@@ -56,8 +36,35 @@ body {
 	margin: auto;
 }
 
+.navi.mainOnly .navlinks__container {
+	padding-top: 10vh;
+}
+
+#hr__dummy {
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+	opacity: 80%;
+	height: 2px;
+}
+
+
+/* Applies to all pages */
+
+.navi {
+	padding: 5px;
+	width: 100vw;
+	transition: all 0.5s ease;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	background-image: url("swirl_pattern.png"); /* background picture obtained through subtlepatterns.com */
+
+}
+
 .navi ul {
-	padding-bottom: .3rem;
 	margin: 0;
 	list-style-type: none;
 	align: center;
@@ -69,10 +76,10 @@ body {
 }
 
 .navi ul li a {
+	font-family: 'Fredericka the Great', cursive;
 
 	padding-left: 4vw;
 	padding-right: 4vw;
-	padding-bottom: .3rem;
 
 	color: #9DBEBB;
 	text-decoration: none;
@@ -102,6 +109,8 @@ body {
                                                    */
 
 main {
+	margin-top: 49px;
+	padding-bottom: 50px;
 	background-color: #468189;
 	color: #F4E9CD;
 }
@@ -130,4 +139,29 @@ h1 {
 .btext {
 	font-family: 'Josefin Sans', cursive;
 	font-size: 1.25rem;
+}
+
+
+/*
+   ____ ____  ___ ____    ______   ______ _____ _____ __  __ 
+  / ___|  _ \|_ _|  _ \  / ___\ \ / / ___|_   _| ____|  \/  |
+ | |  _| |_) || || | | | \___ \\ V /\___ \ | | |  _| | |\/| |
+ | |_| |  _ < | || |_| |  ___) || |  ___) || | | |___| |  | |
+  \____|_| \_\___|____/  |____/ |_| |____/ |_| |_____|_|  |_|
+                                                             */
+
+.row {
+	clear: both;
+	margin: 0 auto;
+	width: 840px;
+	overflow: auto;
+}
+
+.profile__link {
+	margin: 10px;
+	float: left;
+	position: relative;
+
+	/*a href was leaving 3px padding @ the bottom and I'm obsessive so this fixes it*/
+	line-height: 0;
 }
