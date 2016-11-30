@@ -103,7 +103,7 @@ body {
 
 	width: 100vw;
 	
-	transition: all 0.5s ease;
+	transition: color opacity 0.5s ease;
 	background-image: url("broken_noise.png");
 
 	box-shadow: 0px 5px 1px #01070B;
@@ -135,11 +135,12 @@ body {
 
 	opacity: 100%;
 	transition: all 1s;
+
+	vertical-align: middle;
 }
 
 .navi ul li a:hover {
 	color: #F4E9CD;
-	background-color: rgba(157, 190, 187, 0.75);
 	opacity: 50%;
 }
 
@@ -147,6 +148,7 @@ body {
 .navi ul li a:active {
 	color: #77ACA2;
 }
+
 
 /*
   /$$$$$$  /$$$$$$$$  /$$$$$$  /$$$$$$$$ /$$$$$$  /$$$$$$  /$$   /$$  /$$$$$$ 
@@ -162,10 +164,9 @@ body {
 main {
 	margin: 0 auto;
 	margin-top: 49px;
-	padding-bottom: 50px;
 
 	width: 90vw;
-	height: 85vh;
+	min-height: 90vh;
 
 	background-color: #468189;
 	color: #F4E9CD;
@@ -189,7 +190,7 @@ article {
 
 h1 {
 	font-size: 3rem;
-	padding: 1rem;
+	padding: 2rem;
 }
 
 .game {
@@ -244,6 +245,19 @@ a:hover, a:visited {
 	width: 35vw;
 }
 
+.medimg {
+	height: 20vh;
+	width: 20vw;
+}
+
+.smolimg {
+	height: 10vh;
+	width: 10vh;
+}
+
+.icon {
+	height: 24px;
+}
 
 /*
   /$$$$$$  /$$$$$$$  /$$$$$$ /$$$$$$$         /$$$$$$  /$$     /$$ /$$$$$$ 
