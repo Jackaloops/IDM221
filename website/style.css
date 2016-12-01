@@ -11,6 +11,16 @@ body {
 	font-size: 16px;
 }
 
+/* resets all inherited style shit because it's pissing me off */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
 /*
  /$$   /$$  /$$$$$$  /$$      /$$ /$$$$$$$$       /$$$$$$$   /$$$$$$   /$$$$$$  /$$$$$$$$
 | $$  | $$ /$$__  $$| $$$    /$$$| $$_____/      | $$__  $$ /$$__  $$ /$$__  $$| $$_____/
@@ -130,8 +140,6 @@ body {
 
 	color: #9DBEBB;
 	text-decoration: none;
-	font-size: 2rem;
-	font-family: 'Fredericka the Great', cursive;
 
 	opacity: 100%;
 	transition: all 1s;
@@ -164,12 +172,13 @@ body {
 main {
 	margin: 0 auto;
 	margin-top: 49px;
+	padding-bottom: 40px;
 
 	width: 90vw;
-	min-height: 90vh;
+	min-height: 80vh;
 
 	background-color: #468189;
-	color: #F4E9CD;
+	color: #222;
 }
 
 article {
@@ -190,7 +199,7 @@ article {
 
 h1 {
 	font-size: 3rem;
-	padding: 2rem;
+	padding: 3rem;
 }
 
 .game {
@@ -207,6 +216,16 @@ h1 {
 .btext {
 	font-family: 'Josefin Sans', cursive;
 	font-size: 1.25rem;
+}
+
+.stext {
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 2rem;
+}
+
+.stitle {
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 3rem;
 }
 
 a {
@@ -240,6 +259,10 @@ a:hover, a:visited {
 	margin: auto;
 }
 
+.imgbottom {
+	bottom: 0;
+}
+
 .largeimg {
 	height: 35vh;
 	width: 35vw;
@@ -259,6 +282,22 @@ a:hover, a:visited {
 	height: 24px;
 }
 
+.profile img {
+	transition: all 0.2s ease-in-out;
+}
+
+.profile:hover figure img {
+	opacity: .3;
+}
+
+#imgfoot {
+	padding: 20px;
+}
+
+#footimg {
+	margin: 0 auto;
+}
+
 /*
   /$$$$$$  /$$$$$$$  /$$$$$$ /$$$$$$$         /$$$$$$  /$$     /$$ /$$$$$$ 
  /$$__  $$| $$__  $$|_  $$_/| $$__  $$       /$$__  $$|  $$   /$$//$$__  $$
@@ -268,20 +307,43 @@ a:hover, a:visited {
 | $$  \ $$| $$  \ $$  | $$  | $$  | $$       /$$  \ $$    | $$    /$$  \ $$
 |  $$$$$$/| $$  | $$ /$$$$$$| $$$$$$$/      |  $$$$$$/    | $$   |  $$$$$$/
  \______/ |__/  |__/|______/|_______/        \______/     |__/    \______/ 
-                                                             */
+                                                             				*/
 
 .row {
 	clear: both;
 	margin: 0 auto;
 	width: 840px;
 	overflow: auto;
+
+	transition: all 0.2s ease-in-out;
 }
 
-.profile__link {
+figure {
 	margin: 10px;
 	float: left;
 	position: relative;
 
+	height: 360px;
+	vertical-align: middle;
+
 	/*a href was leaving 3px padding @ the bottom and I'm obsessive so this fixes it*/
 	line-height: 0;
+	background-color: #000;
+}
+
+.profile:hover figure figcaption {
+	opacity: 1;
+}
+
+figure a {
+	text-decoration: none;
+}
+
+figcaption {
+	text-align: center;
+	transform: translate(0, -180px);
+
+	transition: all 0.2s ease-in-out;
+
+	opacity: 0;
 }
