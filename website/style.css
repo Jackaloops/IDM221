@@ -213,6 +213,16 @@ h2 {
 	font-size: 2rem;
 }
 
+p {
+	width: 80%;
+	margin: 0 auto;
+
+	text-align: justify;
+
+	line-height: 2rem;
+	margin-bottom: 1rem;
+}
+
 .game {
 	background: #77ACA2;
 	color: #595959;
@@ -255,13 +265,6 @@ a:hover, a:visited {
 
 #profile__info {
 	display: inline-block;
-}
-
-.paragraphs {
-	width: 80%;
-	margin: 0 auto;
-
-	text-align: justify;
 }
 
 /* 
