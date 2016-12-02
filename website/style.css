@@ -155,6 +155,14 @@ body {
 	color: #77ACA2;
 }
 
+#nav__icon {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 20px;
+	top: 8px;
+}
+
 
 /*
   /$$$$$$  /$$$$$$$$  /$$$$$$  /$$$$$$$$ /$$$$$$  /$$$$$$  /$$   /$$  /$$$$$$ 
@@ -178,6 +186,10 @@ main {
 	color: #222;
 }
 
+.no-min-height {
+	min-height: 0;
+}
+
 article {
 	margin: 0 auto;
 	width: 95%;
@@ -188,9 +200,37 @@ article {
 	color: #595959;
 }
 
+.team__border {
+	margin: 0 auto;
+	width: 850px;
+
+	background-color: #F4E9CD;
+
+	text-align: center;
+}
+
 .textwrap 
 {
 	padding: 5%;
+}
+
+.games__container {
+	margin: 0 auto;
+	margin-top: 49px;
+	max-width: 1440px;
+
+	height: 90vh;
+
+	text-align: center;
+}
+
+.game {
+	background: #000;
+	color: #fff;
+
+	transition: opacity 0.3s ease-in-out;
+
+	position: relative;
 }
 
 /*
@@ -223,11 +263,6 @@ p {
 	margin-bottom: 1rem;
 }
 
-.game {
-	background: #77ACA2;
-	color: #595959;
-}
-
 .htext {
 	font-family: 'Josefin Slab', cursive;
 	text-align: center;
@@ -248,6 +283,34 @@ p {
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 3rem;
 	text-align: center;
+}
+
+.scrollwrap {
+	height: 100%;
+	width: 100%;
+
+	overflow: auto;
+	position: absolute;
+
+	z-index: 10;
+
+	transition: opacity 0.3s ease-in-out;
+}
+
+.game__text {
+
+	top: 0%;
+
+	opacity: 0;
+}
+
+/* only works in chromes but I tried */
+.scrollwrap::-webkit-scrollbar {
+	display: none;
+}
+
+.game:hover .game__text {
+	opacity: 1;
 }
 
 a {
@@ -287,6 +350,10 @@ a:hover, a:visited {
 	bottom: 0;
 }
 
+.fillimg {
+	width: 100%;
+}
+
 .largeimg {
 	height: 35vh;
 	width: 35vw;
@@ -303,7 +370,7 @@ a:hover, a:visited {
 }
 
 .icon {
-	height: 24px;
+	height: 30px;
 }
 
 #img-profile-round {
@@ -315,11 +382,35 @@ a:hover, a:visited {
 
 #imgfoot {
 	padding: 20px;
+
+	text-align: center;
 }
 
 #footimg {
 	margin: 0 auto;
+	width: 100vw;
+
+	z-index: -10;
 }
+
+.foot-no-min-height {
+	position: absolute;
+	bottom: 0;
+}
+
+#www__pic {
+	max-height: 1440px;
+
+	background-color: #000;
+
+	transition: opacity 0.3s ease-in-out;
+}
+
+.game:hover img {
+	opacity: .3;
+}
+
+
 
 /*
   /$$$$$$  /$$$$$$$  /$$$$$$ /$$$$$$$         /$$$$$$  /$$     /$$ /$$$$$$ 
@@ -335,8 +426,8 @@ a:hover, a:visited {
 .row {
 	clear: both;
 	margin: 0 auto;
-	width: 840px;
-	overflow: auto;
+	width: 820px;
+	overflow: hidden;
 
 	transition: all 0.2s ease-in-out;
 }
@@ -352,6 +443,8 @@ figure {
 	position: relative;
 
 	vertical-align: middle;
+
+	height: 360px;
 
 	/*a href was leaving 3px padding @ the bottom and I'm obsessive so this fixes it*/
 	line-height: 0;
